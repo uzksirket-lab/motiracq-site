@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://motiracq.technuk.com/sitemap.xml
