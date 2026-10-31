@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="tr" data-lang="tr" data-title-tr="Şifre yenile · MotiRacq" data-title-en="Reset password · MotiRacq" data-desc-tr="MotiRacq hesabın için yeni şifre belirle." data-desc-en="Set a new password for your MotiRacq account.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Şifre yenile · MotiRacq</title>
+<meta name="description" content="MotiRacq hesabın için yeni şifre belirle.">
+<link rel="canonical" href="https://motiracq.technuk.com/sifre-yenile/">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#F5F7FA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1220" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MotiRacq">
+<meta property="og:title" content="Şifre yenile · MotiRacq">
+<meta property="og:description" content="MotiRacq hesabın için yeni şifre belirle.">
+<meta property="og:url" content="https://motiracq.technuk.com/sifre-yenile/">
+<meta property="og:image" content="https://motiracq.technuk.com/assets/brand/og-image.png">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<script>
+(function(){var d=document.documentElement,l=null,th=null;
+try{var q=new URLSearchParams(location.search).get('lang');l=(q==='en'||q==='tr')?q:localStorage.getItem('mrq-lang');th=localStorage.getItem('mrq-theme');}catch(e){}
+if(l==='en'){d.setAttribute('data-lang','en');d.setAttribute('lang','en');}
+if(th==='dark'||th==='light')d.setAttribute('data-theme',th);})();
+</script>
+<link rel="stylesheet" href="/assets/site.css?v=mvwvlr8a">
+<script src="/assets/site.js?v=mvwvlr8a" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js" integrity="sha384-0w2KAL2YHP6wKOkUDzkCDGgVvfmHnj02DHeQ6XcHOgTfFsGyonKOpShMH1x6nk9o" crossorigin="anonymous" defer></script>
+<script src="/assets/reset.js?v=mvwvlr8a" defer></script>
+</head>
+<body>
+<a class="skip" href="#main"><span lang="tr">İçeriğe geç</span><span lang="en">Skip to content</span></a>
+<header class="site-header">
+  <nav class="container nav" aria-label="Ana menü" data-i18n="aria-label" data-tr-aria-label="Ana menü" data-en-aria-label="Main menu">
+    <a class="brand" href="/" aria-label="MotiRacq">
+      <img class="logo-light" src="/assets/brand/motiracq-logo-horizontal-light.svg" alt="MotiRacq" width="178" height="36">
+      <img class="logo-dark" src="/assets/brand/motiracq-logo-horizontal-dark.svg" alt="MotiRacq" width="178" height="36">
+    </a>
+    <ul class="nav-links" id="nav-links"><li><a href="/#ozellikler"><span lang="tr">Özellikler</span><span lang="en">Features</span></a></li><li><a href="/#nasil-calisir"><span lang="tr">Nasıl çalışır</span><span lang="en">How it works</span></a></li><li><a href="/#kamera"><span lang="tr">Kamera</span><span lang="en">Camera</span></a></li><li><a href="/#sss"><span lang="tr">SSS</span><span lang="en">FAQ</span></a></li><li><a href="/destek/"><span lang="tr">Destek</span><span lang="en">Support</span></a></li></ul>
+    <div class="nav-tools">
+      <button class="icon-btn" id="lang-toggle" type="button" aria-label="Switch to English">EN</button>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-pressed="false" aria-label="Tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M5.3 18.7l1.5-1.5M17.2 6.8l1.5-1.5"/></svg></button>
+      <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n="aria-label" data-tr-aria-label="Menüyü aç" data-en-aria-label="Open menu" aria-label="Menüyü aç"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <a class="btn btn-primary btn-sm btn-cta-nav" href="/basvuru/"><span lang="tr">Üyelik iste</span><span lang="en">Request access</span></a>
+    </div>
+  </nav>
+</header>
+<main id="main" tabindex="-1">
+<div class="container" id="reset">
+  <header class="page-head">
+    <p class="kicker"><span lang="tr">Hesap</span><span lang="en">Account</span></p>
+    <h1 lang="tr">Şifreni yenile</h1><h1 lang="en">Reset your password</h1>
+  </header>
+  <div class="card form-card" style="max-width:520px;margin-bottom:72px">
+    <div id="reset-loading" role="status" style="display:flex;gap:12px;align-items:center">
+      <span class="spinner" aria-hidden="true"></span><span lang="tr">Bağlantı doğrulanıyor…</span><span lang="en">Verifying your link…</span>
+    </div>
+    <noscript><p><span lang="tr">Bu sayfa için JavaScript gerekli.</span><span lang="en">This page needs JavaScript.</span></p></noscript>
+
+    <div id="reset-form-wrap" hidden>
+      <p class="muted" style="margin-top:0"><span lang="tr">Hesap</span><span lang="en">Account</span>: <strong id="reset-email"></strong></p>
+      <form id="reset-form" novalidate>
+        <div class="field">
+          <label for="password"><span lang="tr">Yeni şifre</span><span lang="en">New password</span><span class="req" aria-hidden="true">*</span></label>
+          <input id="password" name="password" type="password" autocomplete="new-password" required minlength="8" maxlength="72" aria-describedby="pw-hint err-password">
+          <span class="hint" id="pw-hint"><span lang="tr">En az 8 karakter.</span><span lang="en">At least 8 characters.</span></span>
+        </div>
+        <div class="field">
+          <label for="password2"><span lang="tr">Yeni şifre (tekrar)</span><span lang="en">Confirm new password</span><span class="req" aria-hidden="true">*</span></label>
+          <input id="password2" name="password2" type="password" autocomplete="new-password" required minlength="8" maxlength="72" aria-describedby="err-password">
+          <p class="err" id="err-password" aria-live="polite"></p>
+        </div>
+        <label class="check" for="reset-show"><input id="reset-show" type="checkbox"><span><span lang="tr">Şifreyi göster</span><span lang="en">Show password</span></span></label>
+        <button class="btn btn-primary" type="submit" style="width:100%;margin-top:8px">
+          <span class="spinner" hidden aria-hidden="true"></span>
+          <span><span lang="tr">Şifreyi güncelle</span><span lang="en">Update password</span></span>
+        </button>
+        <p id="reset-status" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div id="reset-success" class="success-panel" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>
+      <h2 lang="tr">Şifren güncellendi</h2><h2 lang="en">Your password has been updated</h2>
+      <p lang="tr" class="muted">Şifren güncellendi, uygulamaya dönüp giriş yapabilirsin.</p><p lang="en" class="muted">Your password has been updated. Go back to the app and sign in.</p>
+    </div>
+
+    <div id="reset-error" hidden>
+      <h2 lang="tr" style="font-size:1.25rem">Bağlantı kullanılamıyor</h2><h2 lang="en" style="font-size:1.25rem">This link can’t be used</h2>
+      <p id="reset-error-text" class="status error"></p>
+      <p lang="tr" class="muted">Şifre yenileme bağlantıları kısa süre geçerlidir ve yalnızca bir kez kullanılabilir. Uygulamada giriş ekranındaki <strong>Şifremi unuttum</strong> ile yeni bir bağlantı ya da kod iste. Sorun sürerse <a href="/destek/">Destek</a> sayfasından bize ulaş.</p><p lang="en" class="muted">Password reset links are valid for a short time and can be used only once. Request a new link or code with <strong>Forgot password</strong> on the app’s sign-in screen. If the problem persists, contact us via the <a href="/destek/">Support</a> page.</p>
+    </div>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img class="logo-light" src="/assets/brand/motiracq-logo-horizontal-light.svg" alt="MotiRacq" width="158" height="32" loading="lazy">
+        <img class="logo-dark" src="/assets/brand/motiracq-logo-horizontal-dark.svg" alt="MotiRacq" width="158" height="32" loading="lazy">
+        <p class="muted" style="margin-top:14px;max-width:30em"><span lang="tr">Telefon kamerasıyla raket sporları analizi: kort, oyuncu, raket ve top takibi; vuruş, hız ve hareket ölçümleri.</span><span lang="en">Racket-sports analysis with your phone camera: court, player, racket and ball tracking; stroke, speed and movement metrics.</span></p>
+      </div>
+      <div>
+        <h2><span lang="tr">Ürün</span><span lang="en">Product</span></h2>
+        <ul>
+          <li><a href="/#ozellikler"><span lang="tr">Özellikler</span><span lang="en">Features</span></a></li>
+          <li><a href="/#nasil-calisir"><span lang="tr">Nasıl çalışır</span><span lang="en">How it works</span></a></li>
+          <li><a href="/#kamera"><span lang="tr">Kamera yerleşimi</span><span lang="en">Camera placement</span></a></li>
+          <li><a href="/basvuru/"><span lang="tr">Üyelik isteği</span><span lang="en">Request access</span></a></li>
+          <li><a href="/destek/"><span lang="tr">Destek</span><span lang="en">Support</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2><span lang="tr">Yasal</span><span lang="en">Legal</span></h2>
+        <ul><li><a href="/kvkk/"><span lang="tr">KVKK Aydınlatma Metni</span><span lang="en">KVKK Privacy Notice</span></a></li><li><a href="/gizlilik/"><span lang="tr">Gizlilik Politikası</span><span lang="en">Privacy Policy</span></a></li><li><a href="/kosullar/"><span lang="tr">Kullanım Koşulları</span><span lang="en">Terms of Use</span></a></li><li><a href="/acik-riza/"><span lang="tr">Açık Rıza Metni</span><span lang="en">Explicit Consent</span></a></li><li><a href="/cerez/"><span lang="tr">Çerez ve İzleme</span><span lang="en">Cookies & Tracking</span></a></li><li><a href="/saglik-uyarisi/"><span lang="tr">Sağlık ve Güvenlik</span><span lang="en">Health & Safety</span></a></li><li><a href="/veri-silme/"><span lang="tr">Veri Saklama ve Silme</span><span lang="en">Data Retention & Deletion</span></a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> MotiRacq · Technuk</span>
+      <span><span lang="tr">Destek</span><span lang="en">Support</span>: <a href="mailto:destek@technuk.com">destek@technuk.com</a> <mark class="ph"><span lang="tr">doğrulanacak</span><span lang="en">to be confirmed</span></mark></span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
